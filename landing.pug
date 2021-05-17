@@ -1,0 +1,12 @@
+extends components/template.pug
+block contents
+		section.intro
+			.intro__image: img(src="images/imagen.png")
+			.intro__content
+				h2 #{title}
+				p Lorem ipsum dolor sit amet, consectetur adipisicing.
+				span Lorem ipsum, dolor sit amet consectetur adipisicing.
+				a.button Leer Más
+		main.content 
+			each title in titles 
+				+box('imagen.png', title, 'Lorem ipsum dolor sit amet consectetur adipisicing.')

@@ -1,0 +1,10 @@
+-var title = "Titulo Principal"
+-var titles = ["Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var links = ['Acerca', 'Nosotros', 'Contacto']
+-var user = "Kmt"
+mixin box(image, title, content)
+    .box
+        .box__image: img(src="images/"+image)
+        .box__content
+            h3 #{title}
+            p #{content}
